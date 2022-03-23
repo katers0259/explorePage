@@ -1,6 +1,56 @@
 .red-background-img{
-background-image: url(Rectangle.png);
 background-position:center;
-
 background-size: cover;
+flex:0 0!important;
+margin:0;
+}
+.tree-background-img{
+    background-position:center;
+    background-size: cover;
+    flex:0 0!important;
+    margin:0;
+}
+
+.image-container {
+    padding:0!important;
+    max-width:1920px!important;
+    position:absolute;
+}
+.image-row{
+    --bs-gutter-x:0!important;
+}
+
+.text-container{
+    position:relative;
+    top:600px;
+
+}
+
+.explore-text{
+    font-size: 224px;
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5.6px;
+    width: 793px;
+    height: 263px;
+    line-height: normal;
+    text-align: center;
+}
+
+.more-details{
+    display:flex;
+}
+
+.more-details-text{
+    /* Style for "More Detai" */
+width: 148px;
+height: 29px;
+color: #ffffff;
+font-family: "Arial MT";
+font-size: 25px;
+font-style: normal;
+letter-spacing: 0.62px;
+line-height: normal;
+text-align: center;
 }

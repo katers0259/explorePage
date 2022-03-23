@@ -181,8 +181,9 @@ margin-top: 10px;
    
     }
   .modal-body{
-    display:flex;
-    flex-wrap: wrap; 
+
+    display: contents;
+
   }
 
   .explore-text{

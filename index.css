@@ -15,6 +15,7 @@ margin:0;
     margin:0;
 }
 
+
 .image-container {
     padding:0!important;
     max-width:1920px!important;
@@ -29,8 +30,19 @@ margin:0;
     top:400px;
 
 }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+    
 
 .explore-text{
+    animation: 1s ease-out 0s 1 slideInLeft;
     font-size: 224px;
     color: #fff;
     font-weight: 700;
@@ -43,6 +55,7 @@ margin:0;
     position: relative;
     left: 10%;
 }
+
 
 .more-details{
     display: flex;
@@ -83,3 +96,117 @@ z-index:100;
 padding:5px;
 }
 
+
+
+.modal-dialog{
+    margin:0!important;
+}
+
+.explore-modal{
+    position: fixed;
+    left: 11%!important;
+    top: 8%!important;
+}
+
+.modal-title{
+    width: 469px;
+    height: 77px;
+    color: #611818;
+    font-family: "Essonnes Text - Bold";
+    font-size: 66px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.65px;
+    line-height: normal;
+    text-align: left;
+}
+
+.modal-header{
+    border:none !important;
+}
+
+.hr{
+    height: 25px;
+    width: 75%;
+}
+
+.modal-content{ 
+  
+    padding:40px;
+}
+
+.modal-body{
+ width: 442px;
+height: 439px;
+color: #505050;
+font-family: "Arial MT";
+font-size: 14px;
+font-style: normal;
+letter-spacing: 0.35px;
+line-height: 30px;
+text-align: left;
+}
+.modal-footer{
+    border: none !important;
+    justify-content: flex-start!important;
+}
+ 
+.read-more-btn{
+width: 235px;
+height: 55px;
+border: 1px solid #979797;
+background-image: linear-gradient(to right, #611818 0%, #a36754 100%);
+}
+
+.btn-text{
+width: 125px;
+height: 21px;
+color: #ffffff;
+font-family: "Arial MT";
+font-size: 18px;
+font-style: normal;
+letter-spacing: 1.69px;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
+margin-top: 10px;
+    margin-left: 45px;
+}
+
+@media only screen and (max-width:769px){
+  
+
+    .modal-dialog{
+        max-height:600px;
+   
+    }
+  .modal-body{
+    display:flex;
+    flex-wrap: wrap; 
+  }
+
+  .explore-text{
+    animation: 1s ease-out 0s 1 slideInLeft;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5.6px;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    left: 10%;
+}
+.explore-modal {
+    position: fixed;
+    left: 5px!important;
+    top: 4%!important;
+}
+    .social-icons{
+        transform: scale(.6);
+        padding:0;
+    }
+
+}

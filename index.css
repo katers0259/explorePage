@@ -174,7 +174,9 @@ margin-top: 10px;
 }
 
 @media only screen and (max-width:769px){
-  
+  .image-row{
+      overflow: hidden;
+  }
 
     .modal-dialog{
         max-height:600px;
@@ -210,4 +212,7 @@ margin-top: 10px;
         padding:0;
     }
 
+    .social-container{
+        left:0;
+    }    
 }
